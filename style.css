@@ -324,7 +324,7 @@ section .title::after{
 }
 
 .skills .skills-content .column{
-    width: calc(50% - 40px);
+    width: calc(50% - 90px);
 }
 
 .skills .skills-content .left .text{
@@ -561,6 +561,10 @@ text-align: justify;
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+        
+    }
+    .skills .skills-content .column{
+        padding-left: 10px;
     }
 }
 
