@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('html').animate({scrollTop: 0});
     });
     // Menu toggling
-    $('.menu-btn').click(function(){
+    $('.menu-btn .read-more').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
