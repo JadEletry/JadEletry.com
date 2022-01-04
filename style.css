@@ -433,10 +433,6 @@ section .title::after{
     color: rgb(194, 193, 193);
 }
 
-.right .fa-paper-plane{
-    font-size: 50px;
-}
-
 .right a{
     display: flex;
     justify-content: center;
