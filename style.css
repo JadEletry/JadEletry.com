@@ -401,7 +401,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .contact .contact-content .left p{
-text-align: center;
+    text-align: center;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -419,9 +419,6 @@ text-align: center;
 }
 .contact .contact-content .row .info .sub-title{
     color: rgb(194, 193, 193);
-}
-.contact .right form .fields{
-    display: flex;
 }
 
 /* responsive media query start */
@@ -513,8 +510,7 @@ text-align: center;
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
+    .skills .skills-content .column{
         width: 100%;
         margin-bottom: 35px;
         
