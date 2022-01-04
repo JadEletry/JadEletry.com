@@ -394,16 +394,14 @@ section .title::after{
 .contact .title::after{
     content: "Get In Touch";
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
+
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .contact .contact-content .left p{
-text-align: justify;
+text-align: center;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
