@@ -435,7 +435,6 @@ section .title::after{
 
 .right a{
     display: inline-block;
-    justify-content: center;
     background: mediumslateblue;
     color: #fff;
     font-size: 18px;
