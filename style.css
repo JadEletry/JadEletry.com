@@ -15,8 +15,8 @@
     background: mediumslateblue;
 }
 
-:any-link{
-    text-decoration: none;
+a{
+    color: white;
 }
 
 *{
