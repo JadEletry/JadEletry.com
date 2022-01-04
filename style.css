@@ -433,6 +433,10 @@ section .title::after{
     color: rgb(194, 193, 193);
 }
 
+.right i{
+    margin-right: 10px;
+}
+
 .right a{
     display: inline-block;
     background: mediumslateblue;
