@@ -429,15 +429,6 @@ section .title::after{
     color: rgb(194, 193, 193);
 }
 
-.contact .right h1{
-    text-align: center;
-}
-
-.contact .right{
-    width: 100%;
-    margin-bottom: 15px;
-}
-
 .right a{
     display: inline-block;
     background: mediumslateblue;
