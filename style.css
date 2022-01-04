@@ -332,6 +332,10 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+.projects .proj-content a:link{
+    color: #fff;
+}
+
 
 /* skills section styling */
 .skills .title::after{
