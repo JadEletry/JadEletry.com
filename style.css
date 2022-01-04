@@ -434,7 +434,7 @@ section .title::after{
 }
 
 .right a{
-    display: flex;
+    display: inline-block;
     justify-content: center;
     background: mediumslateblue;
     color: #fff;
