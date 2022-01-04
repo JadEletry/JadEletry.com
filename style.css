@@ -434,8 +434,8 @@ section .title::after{
 }
 
 .fa-paper-plane{
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    size: 25px
 }
 
 .right a{
