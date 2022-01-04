@@ -434,8 +434,9 @@ section .title::after{
 }
 
 .fa-paper-plane{
+    display: flex;
     justify-content: center;
-    size: 25px
+    font-size: 25px;
 }
 
 .right a{
