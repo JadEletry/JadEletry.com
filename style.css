@@ -433,10 +433,6 @@ section .title::after{
     color: rgb(194, 193, 193);
 }
 
-.right i{
-    margin-right: 10px;
-}
-
 .right a{
     display: inline-block;
     background: mediumslateblue;
@@ -445,6 +441,7 @@ section .title::after{
     padding: 8px 16px;
     font-weight: 600;
     margin-top: 20px;
+    margin-left: 15px;
     border-radius: 10px;
     border: 2px solid mediumslateblue;
     transition: all 0.3s ease;
