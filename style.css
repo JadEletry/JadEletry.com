@@ -429,6 +429,10 @@ section .title::after{
     color: rgb(194, 193, 193);
 }
 
+.right i{
+    justify-content: center;
+}
+
 .right a{
     display: inline-block;
     background: mediumslateblue;
@@ -440,6 +444,11 @@ section .title::after{
     border-radius: 10px;
     border: 2px solid mediumslateblue;
     transition: all 0.3s ease;
+}
+
+.right a:hover{
+    color: mediumslateblue;
+    background: none;
 }
 
 /* responsive media query start */
