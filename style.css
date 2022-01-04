@@ -435,6 +435,7 @@ section .title::after{
 
 .fa-paper-plane{
     align-items: center;
+    text-align: center;
 }
 
 .right a{
