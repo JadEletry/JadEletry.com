@@ -15,12 +15,6 @@ $(document).ready(function(){
         }
     });
     
-     // project linking
-    $('.card').click(function(){
-        window.location=$(this).find("a").attr("href"); 
-        return false
-    });
-    
     // slider-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
