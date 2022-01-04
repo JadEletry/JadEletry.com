@@ -441,6 +441,7 @@ section .title::after{
     padding: 8px 16px;
     font-weight: 600;
     margin-top: 20px;
+    margin-bottom: 40px;
     border-radius: 10px;
     border: 2px solid mediumslateblue;
     transition: all 0.3s ease;
