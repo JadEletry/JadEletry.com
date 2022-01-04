@@ -8,11 +8,11 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #888;
+    background: rgb(35, 35, 35);
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: rgb(35, 35, 35);
+    background: mediumslateblue;
 }
 
 *{
