@@ -433,7 +433,7 @@ section .title::after{
     display: flex;
 }
 
-.contact .right h2{
+.contact .right h1{
     text-align: center;
 }
 
