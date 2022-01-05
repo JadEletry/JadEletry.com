@@ -241,7 +241,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
-    border: 1.5px solid mediumslateblue;
+    border: 2px solid mediumslateblue;
 }
 
 
