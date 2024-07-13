@@ -24,22 +24,21 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-    // typing effect
+
+    // typing text
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Developer", "Student", "Programmer"],
+        strings: ["Software Engineer", "Cloud Enthusiast", "Developer", "Tech Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Software Engineer", "Developer", "Student", "Programmer"],
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Software Engineer", "Cloud Enthusiast", "Developer", "Tech Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-
-    
 });
 
 
