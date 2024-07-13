@@ -284,7 +284,6 @@ section .title::after{
 .projects, .contact{
     color: #fff;
     background: #111;
-
 }
 
 .projects .title::before,
@@ -298,14 +297,25 @@ section .title::after{
     content: "My work";
 }
 
-.projects .proj-content .card{
-    width: calc(33% - 20px);
+.projects .proj-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects .proj-content .card {
+    flex: 1 1 calc(33.333% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    min-height: 300px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .projects .proj-content .card:hover{
@@ -342,24 +352,27 @@ section .title::after{
 }
 
 
+
 /* skills section styling */
-.skills .title::after{
+.skills .title::after {
     content: "What I know";
-}
-
-.skills .skills-content .column{
+  }
+  
+  .skills .skills-content .column {
     width: calc(50% - 90px);
-}
-
-.skills .skills-content .left .text{
+  }
+  
+  .skills .skills-content .left .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 5px;
-}
-.skills .skills-content .left p{
+  }
+  
+  .skills .skills-content .left p {
     text-align: justify;
-}
-.skills .skills-content .left a{
+  }
+  
+  .skills .skills-content .left a {
     display: inline-block;
     background: mediumslateblue;
     color: #fff;
@@ -370,35 +383,42 @@ section .title::after{
     border-radius: 10px;
     border: 2px solid mediumslateblue;
     transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
+  }
+  
+  .skills .skills-content .left a:hover {
     color: mediumslateblue;
     background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info{
+  }
+  
+  .skills .skills-list-container {
     display: flex;
-    margin-bottom: 5px;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
+  }
+  
+  .skills-category {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .skills-category strong {
+    display: block;
     font-size: 18px;
-}
-
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0%;
-    top: 0%;
-    background: mediumslateblue;
-}
-
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .skills-category ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .skills-category ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  
 /* contact section styling */
 .contact .title::after{
     content: "Get In Touch";
