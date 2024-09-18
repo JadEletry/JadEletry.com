@@ -281,18 +281,18 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects, .contact{
+.projects, .contact {
     color: #fff;
     background: #111;
 }
 
 .projects .title::before,
-.contact .title::before{
+.contact .title::before {
     background: #fff;
 }
 
 .projects .title::after,
-.contact .title::after{
+.contact .title::after {
     background: #111;
     content: "My work";
 }
@@ -306,50 +306,67 @@ section .title::after{
 
 .projects .proj-content .card {
     flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px); /* Ensures cards don’t stretch too much */
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-height: 300px; /* Set a minimum height */
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.projects .proj-content .card:hover{
+.projects .proj-content .card:hover {
     background: mediumslateblue;
 }
 
-.projects .proj-content .card .box{
+.projects .proj-content .card .box {
     transition: all 0.3s ease;
 }
 
-.projects .proj-content .card:hover .box{
+.projects .proj-content .card:hover .box {
     transform: scale(1.05);
 }
 
-.projects .proj-content .card i{
+.projects .proj-content .card i {
     font-size: 50px;
     color: mediumslateblue;
     transition: color 0.3s ease;
 }
 
-.projects .proj-content .card:hover i{
+.projects .proj-content .card:hover i {
     font-size: 50px;
     color: #fff;
 }
 
-.projects .proj-content .card .text{
+.projects .proj-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.projects .proj-content a:link{
+.projects .proj-content a:link {
     color: #fff;
 }
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+    .projects .proj-content .card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects .proj-content .card {
+        flex: 1 1 100%; /* One card per row */
+        max-width: 100%;
+    }
+}
+
 
 
 
