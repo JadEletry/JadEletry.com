@@ -434,21 +434,29 @@ section .title::after{
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.skills-category ul {
-  list-style: none;
-  padding-left: 20px;
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skills-category ul li {
-  font-size: 16px;
-  margin-bottom: 5px;
+.skills-badges span {
+  display: inline-block;
+  background: mediumslateblue;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.skills-category i {
-  color: mediumslateblue;
+.skills-badges span:hover {
+  background: darkslateblue;
+  transform: translateY(-3px);
 }
 
   
