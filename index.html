@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jad Eletry</title>
@@ -36,12 +37,18 @@
 
   <!-- home section start  -->
   <section class="home" id="home">
+    <canvas id="matrix-canvas"></canvas>
     <div class="max-width">
       <div class="home-content">
         <div class="text-1">Hello, my name is</div>
         <div class="text-2">Jad Eletry</div>
         <div class="text-3">And I'm a <span class="typing"></span></div>
-        <a href="./Downloads/Resume.pdf" download>My Resume</a>
+        <a href="./Downloads/Jad Eletry's Resume.pdf" download>Download my Resume</a>
+
+        <a href="#about" class="explore-link">
+          <span>Explore More</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -56,179 +63,328 @@
         <div class="column right">
           <div class="text">I'm Jad and I'm a <span class="typing-2"></span></div>
           <p>
-            I am a highly motivated Software Engineering graduate from Ontario Tech University, specializing in the Internet of Things (IoT) and cloud technologies. My academic foundation and hands-on experience have equipped me with expertise in cloud computing (AWS and Azure), machine learning, artificial intelligence, database management, and distributed systems.            
+            With a degree in Software Engineering from Ontario Tech University, I’ve developed expertise across cloud
+            computing (AWS, Azur, and GCP), full-stack development, machine learning, and DevOps. My background combines
+            hands-on experience with a strong academic foundation in modern technologies like IoT, distributed systems,
+            and AI
             <br /><br />
-            Professionally, I have worked on enhancing security protocols, automating routine checks to improve efficiency, and developing tools to monitor application security metrics. Through these experiences, I’ve demonstrated my ability to reduce manual oversight and streamline operations using DevOps practices, with a strong focus on Java, Python, and cloud-native solutions.            
+            Professionally, I have worked on enhancing security protocols, automating routine checks to improve
+            efficiency, and developing tools to monitor application security metrics. Through these experiences, I’ve
+            demonstrated my ability to reduce manual oversight and streamline operations using DevOps practices, with a
+            strong focus on Java, Python, and cloud-native solutions.
             <br /><br />
-            Currently, I am pursuing advanced certifications in AWS and Azure to deepen my expertise and strengthen my ability to build scalable, secure, and efficient cloud solutions. My goal is to leverage my skills and knowledge to drive innovation and deliver impactful, high-quality solutions as a Software Engineer.          
+            I’ve built tools to enhance security, automate operations, and optimize cloud-based workflows—leveraging
+            Java, Python, CI/CD pipelines, and agile methodologies. I actively integrate Generative AI tools such as
+            ChatGPT and GitHub Copilot into my workflow to improve productivity and ideation.
+            <br /><br />
+
+            Currently, I’m pursuing advanced certifications while continuing to build solutions that are reliable,
+            efficient, and innovative. My goal is to bring a versatile mindset and technical depth to any software
+            engineering challenge.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
 
- <!-- Projects section start -->
-<section class="projects" id="projects">
-  <div class="max-width">
+
+  <!-- Projects section start -->
+  <section class="projects" id="projects">
+    <div class="max-width">
       <h2 class="title">Projects</h2>
       <div class="proj-content">
 
-          <div class="card" onclick="location.href='https://github.com/JadEletry/Vapor-Runner'">
-              <div class="box">
-                  <span style="font-size: 25px;"><i class="fas fa-gamepad"></i></span>
-                  <div class="text">Vapor Runner</div>
-                  <p>Vapor Runner is a mini run-like game that generates an infinite number of tiles sequentially and
-                      randomly over a plane.</p>
-              </div>
-          </div>
-
-          <div class="card" onclick="location.href='https://github.com/Abbas-Rizvi/p2p-social'">
-            <div class="box">
-                <span style="font-size: 25px;"><i class="fas fa-users"></i></span>
-                <div class="text">P2P Social</div>
-                <p>A distributed social networking system built using peer-to-peer networks and blockchain. It ensures secure, immutable, and decentralized content distribution.</p>
+        <!-- Vapor Runner (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-gamepad"></i></span>
+              <div class="text">Vapor Runner</div>
+              <p>Vapor Runner is a mini run‐like game that generates an infinite number of tiles sequentially and
+                randomly over a plane.</p>
             </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/Vapor-Runner" class="half">View Code</a>
+              <a href="./demos/VaporRunner.html" class="half">Watch Demo</a>
+            </div>
+          </div>
         </div>
-        
 
-          <div class="card" onclick="location.href='https://github.com/JadEletry/A-Star-Algorithm-Visualizer'">
-              <div class="box">
-                  <span style="font-size: 25px;"><i class="fas fa-route"></i></span>
-                  <div class="text">A* Algorithm Visualizer</div>
-                  <p>This project visualizes the shortest path between two nodes using the A* algorithm</p>
-              </div>
+        <!-- P2P Social (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-users"></i></span>
+              <div class="text">P2P Social</div>
+              <p>A distributed social networking system built using peer‐to‐peer networks and blockchain. It ensures
+                secure, immutable, and decentralized content distribution.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Abbas-Rizvi/p2p-social" class="half">View Code</a>
+              <a href="./demos/p2pMerged.html" class="half">Watch Demo</a>
+            </div>
           </div>
+        </div>
 
-          <div class="card" onclick="location.href='https://github.com/JadEletry/aws-email-app'">
-              <div class="box">
-                  <span style="font-size: 25px;"><i class="fas fa-envelope"></i></span>
-                  <div class="text">AWS Email Application</div>
-                  <p>An AWS-based email application that allows users to subscribe to a
-                      newsletter via a web form, store subscription information in DynamoDB, generate a CSV file of
-                      subscribers, and send personalized emails using AWS Lambda, SES, and S3. The infrastructure is
-                      managed using Terraform</p>
-              </div>
+        <!-- A* Algorithm Visualizer (live) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-route"></i></span>
+              <div class="text">A* Algorithm Visualizer</div>
+              <p>This project visualizes the shortest path between two nodes using the A* algorithm.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/A-Star-Algoirthm-Visualizer" class="half">View Code</a>
+              <a href="https://a-star-web.onrender.com/" class="half">Live Demo</a>
+            </div>
           </div>
+        </div>
 
-          <div class="card" onclick="location.href='https://github.com/JadEletry/aws-text-to-speech'">
-              <div class="box">
-                  <span style="font-size: 25px;"><i class="fas fa-microphone"></i></span>
-                  <div class="text">AWS Text-to-Speech Converter</div>
-                  <p>An AWS Lambda function that converts text to speech using AWS Polly.
-                      The project is managed using Infrastructure as Code (IaC) with Terraform</p>
-              </div>
+        <!-- AWS Email Application (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-envelope"></i></span>
+              <div class="text">AWS Email Application</div>
+              <p>An AWS‐based email application that allows users to subscribe to a newsletter via a web form, store
+                subscription info in DynamoDB, generate a CSV, and send personalized emails via Lambda, SES, and S3.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/aws-email-app" class="half">View Code</a>
+              <a href="./demos/EmailApp.html" class="half">Watch Demo</a>
+            </div>
           </div>
+        </div>
 
-          <div class="card" onclick="location.href='https://github.com/Mohammad0336/Adaptive_Cruise_Control'">
-            <div class="box">
-              <span style="font-size: 25px;"><i class="fas fa-car"></i></span>
+        <!-- AWS Text-to-Speech Converter (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-microphone"></i></span>
+              <div class="text">AWS Text-to-Speech Converter</div>
+              <p>An AWS Lambda function that converts text to speech using AWS Polly. The project is managed via
+                Terraform.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/aws-text-to-speech" class="half">View Code</a>
+              <a href="./demos/tts.html" class="half">Watch Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adaptive Cruise Control (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-car"></i></span>
               <div class="text">Adaptive Cruise Control</div>
-              <p>As a contributor, I helped integrate adaptive cruise control and platooning capabilities into an autonomous vehicle stack called Autoware. This project involves utilizing LiDAR, YOLO, 
-                and various other sensor and AI technologies to enhance vehicle safety and efficiency</p>            
-              </div>
+              <p>Contributed adaptive cruise control features into an autonomous vehicle stack (Autoware) using LiDAR,
+                YOLO, and other AI technologies to enhance safety and efficiency.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mohammad0336/Adaptive_Cruise_Control" class="half">View Code</a>
+              <a href="./demos/ACC.html" class="half">Watch Demo</a>
+            </div>
           </div>
+        </div>
 
-          <div class="card" onclick="location.href='https://github.com/Mohammad0336/Mobile_Final_Project/tree/master'">
-            <div class="box">
-              <span style="font-size: 25px;"><i class="fas fa-brands fa-android"></i></span>
+        <!-- Smartplay Sports App (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fab fa-android"></i></span>
               <div class="text">Smartplay Sports App</div>
-              <p>An Android app offering real-time sports highlights, podcasts, and venue searches, utilizing Google Maps, YouTube, and Spotify integration</p>            
-              </div>
+              <p>An Android app offering real‐time sports highlights, podcasts, and venue searches, with Google Maps,
+                YouTube & Spotify integration.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mohammad0336/Mobile_Final_Project" class="half">View Code</a>
+              <a href="demos/SmartPlay.html" class="half">Watch Demo</a>
+            </div>
           </div>
-        
-          <div class="card" onclick="location.href='https://github.com/JadEletry/Jad-Eletry-2024'">
-            <div class="box">
-              <span style="font-size: 25px;"><i class="fas fa-link"></i></span>
-              <div class="text">Alternative Personal Portfolio</div>
-              <p>A newly developed template for a modern portfolio website utilizing next.js and aceternity tailwind css components</p>            
-              </div>
-          </div>
-    
-      </div>
-  </div>
-</section>
+        </div>
 
- <!-- Skills section -->
-<section class="skills" id="skills">
-  <div class="max-width">
-    <h2 class="title">My Skills</h2>
-    <div class="skills-content">
-      <div class="column left">
-        <div class="text">My skills & experience</div>
-        <p>
-          My journey through school and projects has equipped me with a wide range of skills, including programming languages, frameworks, and developer tools. I continuously learn new technologies to stay updated with industry trends.
-        </p>
-        <a href="#projects" class="read-more">Explore my projects</a>
+        <!-- Alternative Personal Portfolio (recording) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-link"></i></span>
+              <div class="text">Alternative Personal Portfolio</div>
+              <p>A modern portfolio website built with Next.js and Aceternity Tailwind components.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/Jad-Eletry-2025" class="half">View Code</a>
+              <a href="./demos/AltPortfolio.html" class="half">Watch Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Job Tracker (live) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-briefcase"></i></span>
+              <div class="text">Smart Job Tracker</div>
+              <p>An AI-powered job application tracker that lets you organize job submissions and generate resume
+                insights using Groq + OpenAI integration.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/smart-job-tracker" class="half">View Code</a>
+              <a href="https://smart-job-tracker.vercel.app/" class="half">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Project: Ridge Regression (Polynomial) -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-chart-line"></i></span>
+              <div class="text">Ridge Regression</div>
+              <p>A Ridge Regression model with polynomial feature expansion which allows tuning of polynomial
+                degree and regularization strength to explore underfitting and overfitting behavior on training and test
+                data.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/ml-ridge-regression" class="half">View Code</a>
+              <a href="https://ml-ridge-regression-h693wvp5kevsetdrhpzmmi.streamlit.app/" class="half">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Project: Polynomial Regression -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-wave-square"></i></span>
+              <div class="text">Polynomial Regression</div>
+              <p>A polynomial regression model to fit non-linear trends in synthetic data with an adjustable
+                polynomial degree to observe curve fitting and prediction accuracy.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/ml-polynomial-regression" class="half">View Code</a>
+              <a href="https://ml-polynomial-regression-y4tntxhhduakefimktasj2.streamlit.app/" class="half">Live
+                Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Project: Multiclass Classification -->
+        <div class="card hover-split">
+          <div class="box">
+            <div class="card-content">
+              <span style="font-size:25px;"><i class="fas fa-layer-group"></i></span>
+              <div class="text">Multiclass Classification</div>
+              <p>A multiclass classifier using a deep neural network on the Fashion MNIST dataset with
+                TensorFlow and Keras.</p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JadEletry/multiclass-classification" class="half">View Code</a>
+              <a href="https://multiclass-classification-ekx8bwykdmtpg2appi8qrxz.streamlit.app/" class="half">Live
+                Demo</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="column right">
-        <div class="skills-list-container">
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fa-solid fa-code"></i>&nbsp; Languages & Frameworks</strong>
-            <ul>
-              <li>Python, Flask, Django</li>
-              <li>Java, Spring Boot</li>
-              <li>JavaScript, NodeJS, React, NextJS</li>
-              <li>HTML5 & CSS3</li>
-              <li>SQL</li>
-              <li>TypeScript</li>
-              <li>Bash, PowerShell</li>
-              <li>Dart, Flutter</li>
-            </ul>
-          </div>
-    
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fa-solid fa-wrench"></i>&nbsp; Developer Tools</strong>
-            <ul>
-              <li>Git</li>
-              <li>Docker</li>
-              <li>Jenkins</li>
-              <li>Terraform</li>
-              <li>Ansible</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fa-solid fa-cloud"></i>&nbsp; Cloud & Technologies</strong>
-            <ul>
-              <li>AWS: EC2. S3. Lambda, RDS, CloudFormation, IAM</li>
-              <li>Azure: AKS, Functions, Logic Apps, Entra ID RBAC</li>
-              <li>GCP: BigQuery, Firebase, GKE</li>
-              <li>Apache Kafka</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fas fa-brain"></i>&nbsp; Machine Learning & AI</strong>
-            <ul>
-              <li>ML Frameworks: TensorFlow, PyTorch, scikit-learn</li>
-              <li>Data Processing: Matplotlib, Pandas, NumPy</li>
-              <li>AI Services: AWS SageMaker, Azure Cognitive Services</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fa-solid fa-server"></i>&nbsp; Operating Systems</strong>
-            <ul>
-              <li>Windows</li>
-              <li>Unix/Linux</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <strong><i style="color: mediumslateblue" class="fa-solid fa-handshake"></i>&nbsp; Soft Skills</strong>
-            <ul>
-              <li>Leadership</li>
-              <li>Teamwork</li>
-              <li>Critical Thinking</li>
-              <li>Time Management</li>
-              <li>Adaptability</li>
-            </ul>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">My skills & experience</div>
+          <p>
+            My journey through professional work, academic collaborations, and independent projects has equipped me with
+            a wide range of skills, including programming
+            languages, frameworks, and developer tools. I continuously learn new technologies to stay updated with
+            industry trends.
+          </p>
+          <a href="#projects" class="read-more">Explore my projects</a>
+        </div>
+        <div class="column right">
+          <div class="skills-list-container">
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fa-solid fa-code"></i>&nbsp; Languages &
+                Frameworks</strong>
+              <ul>
+                <li>Python (Flask, Django)</li>
+                <li>Java</li>
+                <li>JavaScript / TypeScript (React, Next.js, Node.js)</li>
+                <li>Dart (Flutter)</li>
+                <li>SQL, PostgreSQL, MongoDB, Firebase</li>
+                <li>HTML5, CSS3, Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fa-solid fa-wrench"></i>&nbsp; Developer Tools</strong>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Vite, Postman</li>
+                <li>VS Code, IntelliJ, Figma</li>
+                <li>Docker, Kubernetes, Terraform</li>
+                <li>GitHub Actions, Jenkins</li>
+                <li>Agile Methodologies</li>
+                <li> PyTest, JUnit</li>
+                <li>Jira, Notion</li>
+                <li>Windows, Linux</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fa-solid fa-cloud"></i>&nbsp; Cloud &
+                Technologies</strong>
+              <ul>
+                <li>AWS: EC2. S3. Lambda, RDS, CloudFormation, IAM</li>
+                <li>Azure: AKS, Functions, Logic Apps, Entra ID</li>
+                <li>GCP: BigQuery, Firebase, GKE</li>
+                <li>Apache Kafka</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fas fa-brain"></i>&nbsp; Machine Learning & AI:</strong>
+              <ul>
+                <li>TensorFlow, PyTorch, scikit-learn</li>
+                <li>Pandas, NumPy, Matplotlib</li>
+                <li>AWS SageMaker, Azure Cognitive Services, OpenAI API</li>
+                <li>GitHub Copilot, ChatGPT</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fa-solid fa-handshake"></i>&nbsp; Soft Skills</strong>
+              <ul>
+                <li>Proactive Communication</li>
+                <li>Initiative & Self-Motivation</li>
+                <li>Accountability</li>
+                <li>Collaboration & Team Support</li>
+                <li>Adaptability to Change</li>
+                <li>Focus & Follow-Through</li>
+                <li>Constructive Feedback Exchange</li>
+                <li>Attention to Detail</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <strong><i style="color: mediumslateblue" class="fas fa-book-open"></i>&nbsp; Currently Learning</strong>
+              <ul>
+                <li>C#, .NET</li>
+                <li>OpenAI & Prompt Engineering</li>
+                <li>GraphQL</li>
+                <li>Generative AI</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-  
+
   <!-- Contact section start -->
   <section class="contact" id="contact">
     <div class="max-width">
@@ -261,12 +417,14 @@
           </div>
         </div>
         <div class="column right">
-          <p>If you have any further inquiries, you can email me and ask me anything. Just click the email message
+          <p>If you have any further inquiries, you can email me and ask. Just click the email message
             below.</p>
-          <span style="display: inline"><a href="mailto:jeletry@gmail.com" target="_blank"><i class="fas fa-paper-plane fa-1x"></i>&nbsp;&nbsp;Send a message...</a></span>
+          <span style="display: inline"><a href="mailto:jeletry@gmail.com" target="_blank"><i
+                class="fas fa-paper-plane fa-1x"></i>&nbsp;&nbsp;Send a message...</a></span>
         </div>
       </div>
     </div>
   </section>
 </body>
+
 </html>
